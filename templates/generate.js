@@ -10,7 +10,7 @@ module.exports = function generate(gulp, nunjucksRender, rename, nunjucksRenderC
     const ServerProjectRootPath = nunjucksRenderConfig.ServerFullPath;
     const FrontendFullPath = nunjucksRenderConfig.FrontendFullPath;
     if (FrontendFullPath == "") {
-        console.log("请在 package.json 字段 FrontendFullPath 配置 d2-admin-pm(https://github.com/wjkang/d2-admin-pm) 项目绝对路径")
+        console.log("代码生成失败，请在 package.json 字段 FrontendFullPath 配置 d2-admin-pm(https://github.com/wjkang/d2-admin-pm) 项目绝对路径")
         return
     }
     //server
