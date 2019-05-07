@@ -9,5 +9,7 @@ export default {
     //page
     APIRelativePath: '/src/api/',
     PagesRelativePath: '/src/pages/',
-    RouterMapComponentRelativePath: '/src/routerMapComponents/'
+    RouterMapComponentRelativePath: '/src/routerMapComponents/',
+    MenuRelativePath: '/src/development/menu/',
+    RouterRelativePath: '/src/development/router/'
 }
