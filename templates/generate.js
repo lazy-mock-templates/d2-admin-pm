@@ -48,6 +48,11 @@ module.exports = function generate(gulp, nunjucksRender, rename, nunjucksRenderC
         .pipe(rename('editForm.vue'))
         .pipe(gulp.dest(path.join(FrontendFullPath, CodeGenerateConfig.config.PagesRelativePath, Model.module, Model.name)));
 
+    gulp.src(`${pageTemplatePath}routerMapComponent.njk`)
+        .pipe(nunjucksRender(nunjucksRenderConfig))
+        .pipe(rename(Model.name + '.js'))
+        .pipe(gulp.dest(path.join(FrontendFullPath, CodeGenerateConfig.config.RouterMapComponentRelativePath)));
+
     return gulp.src(`${pageTemplatePath}index.njk`)
         .pipe(nunjucksRender(nunjucksRenderConfig))
         .pipe(rename('index.vue'))
