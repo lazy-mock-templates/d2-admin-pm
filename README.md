@@ -3,3 +3,11 @@
 ```bash
 git clone https://github.com/wjkang/d2-admin-pm.git
 ```
+
+```bash
+npm install lazy-mock -g
+```
+
+```bash
+lazy-mock init d2-admin-pm your-project
+```
