@@ -3,7 +3,7 @@ const CodeGenerateConfig = require('./config').default;
 const Models = CodeGenerateConfig.models;
 
 module.exports = function generate(gulp, nunjucksRender, rename, nunjucksRenderConfig) {
-    for (let model of Models) {
+    for (let Model of Models) {
         nunjucksRenderConfig.data = {
             model: CodeGenerateConfig.model,
             config: CodeGenerateConfig.config
