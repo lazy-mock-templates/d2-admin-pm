@@ -1,6 +1,6 @@
-import model from './model';
+import models from './model';
 import config from './config';
 export default {
-    model,
+    models,
     config
 }
